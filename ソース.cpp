@@ -7,13 +7,7 @@
 //########## ヘッダーファイル読み込み ##########
 #include "DxLib.h"
 
-//########## マクロ定義 ##########
-#define GAME_WIDTH	800	//画面の横の大きさ
-#define GAME_HEIGHT	600	//画面の縦の大きさ
-#define GAME_COLOR	32	//画面のカラービット
-
-#define GAME_WINDOW_BAR	0	//タイトルバーはデフォルトにする
-#define GAME_WINDOW_NAME	"GAME TITLE"	//ウィンドウのタイトル
+#include "header.h"
 
 //########## プログラムで最初に実行される関数 ##########
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
@@ -31,9 +25,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	DrawString(DrawX, DrawY, "Hello World", GetColor(255, 255, 255));	//文字を描画
 
-	WaitKey();	//キー入力待ち
+	WaitKey();	//キーー入力待ち
 	DxLib_End();	//ＤＸライブラリ使用の終了処理
 
 	return 0;
 }
-//▲▲▲▲▲ プログラム追加ここまで ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+//▲▲▲▲▲ プログラム追加ここまで ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
